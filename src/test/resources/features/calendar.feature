@@ -7,7 +7,7 @@ Feature: Calendar functionality
     And user enters password
     And user should see the Discuss page
     Then user should click on Calendar page
-    Then user should see the time list displays, incease by one hour each time
+    Then user should see the time list displays, increased by one hour each time
       | 0:00  |
       | 1:00  |
       | 2:00  |

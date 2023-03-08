@@ -48,7 +48,7 @@ public class Calendar_StepDefinitions {
     }
 
 
-    @Then("user should see the time list displays, incease by one hour each time")
+    @Then("user should see the time list displays, increased by one hour each time")
     public void userShouldSeeTheTimeListDisplaysInceaseByOneHourEachTime(List<String> time) {
         List<String> textList = new ArrayList<String>();
 

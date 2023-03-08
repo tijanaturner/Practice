@@ -63,11 +63,11 @@ public class Documentation_US101   {
         }
 
     @Then("user shouldn verify there are {int} main document topics are listed")
-    public void userShouldnVerifyThereAreMainDocumentTopicsAreListed(int arg0) {
-        for (WebElement each : docPage.elements) {
-            Assert.assertTrue(each.isDisplayed());
+    public void userShouldnVerifyThereAreMainDocumentTopicsAreListed(int fourTopics) {
 
-        }
+            Assert.assertEquals(fourTopics, docPage.elements.size());
+
+
     }
 }
 
