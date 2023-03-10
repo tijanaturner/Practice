@@ -1,13 +1,11 @@
 Feature: Calendar functionality
 
-  @try
-  Scenario: Calendar time list verification start from 0:00 til 23:00
-    Given user is on the login page of the Oddo app
-    When user enters username
-    And user enters password
-    And user should see the Discuss page
-    Then user should click on Calendar page
-    Then user should see the time list displays, increased by one hour each time
+  @US109TT
+  Scenario: Calendar time list verification
+    Given user is logged in
+    And user should click on Calendar page
+    Then user should verify calendar time list starting from "0:00" til "23:00", and is increased by one hour
+
       | 0:00  |
       | 1:00  |
       | 2:00  |
