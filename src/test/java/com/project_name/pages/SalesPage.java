@@ -19,7 +19,8 @@ public class SalesPage extends BasePage{
     @FindBy(xpath = "//span[@class='oe_topbar_name']")
     public WebElement LoginNameButton;
 
-
+    @FindBy(xpath = "//li[@style='display: block;']")
+    public List<WebElement> modules22;
 
 
 
