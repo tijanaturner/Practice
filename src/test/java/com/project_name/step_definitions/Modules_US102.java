@@ -13,7 +13,7 @@ import org.openqa.selenium.WebElement;
 public class Modules_US102 {
 
     ModulesPage modulePage = new ModulesPage();
-    @Given("User is logged in page as a Event Manager")
+    @Given("verify user is logged as sales manager")
     public void userIsLoggedInPageAsAEventManager() {
 
         modulePage.usernameLogin.sendKeys(ConfigurationReader.getProperty("eventscrm_username")+ Keys.ENTER);
@@ -30,7 +30,7 @@ public class Modules_US102 {
     @Then("user should see {int} modules")
     public void user_should_see_modules(Integer allModules) {
 
-            Assert.assertEquals(allModules, Integer.valueOf(modulePage.modules.size()));
+      Assert.assertEquals(allModules, Integer.valueOf(modulePage.modules.size()));
         }
 
 

@@ -17,7 +17,7 @@ public class Calendar_StepDefinitions {
     Calendar_page page = new Calendar_page();
 
 
-    @Given("user is already logged in")
+    @Given("user is logged in")
     public void userIsAlreadyLoggedIn() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
         page.username.sendKeys(ConfigurationReader.getProperty("username")+ Keys.ENTER);
@@ -44,6 +44,10 @@ public class Calendar_StepDefinitions {
         Assert.assertEquals(string2,(textList.get(textList.size()-1)));
         Assert.assertEquals(time,textList);
     }
-    }
+
+
+
+}
+
 
 

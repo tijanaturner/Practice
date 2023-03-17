@@ -1,8 +1,5 @@
 package com.project_name.step_definitions;
 
-
-
-
 import com.project_name.utilities.BrowserUtils;
 import com.project_name.utilities.ConfigurationReader;
 import com.project_name.utilities.Driver;
